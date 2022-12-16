@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Dreamdata Challenge - Maro Ortega
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to run
 
-## Available Scripts
+### Env
+Create a `.env` file, you can copy `.env.template` for the defaults. Only 511 API token needs to be added.
 
-In the project directory, you can run:
+### Cross-Origin-Resource-Sharing
+Because the 511 API does not have CORS a server to proxy the requests is necessary. For this purpose `local-proxy-cors` is included in the project.
 
-### `npm start`
+Before running the app please start the proxy with one of the following commands.
+```yarn proxy```
+```npm run proxy```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### App
+Start the application with one of the following commands.
+```yarn start```
+```npm start```
 
-### `npm test`
+The app can be open at `http:locahost:3000`, autoopen on browser has been disabled.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Issues
+The search queries don't seem to work well when searching by location, the geography parameter does not behave as expected from the documentation and also it does not recognize it when encoded with URLSearchParams.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Also the tolerance param doesn't seem to work as expected as it returns results for the point 0,0 at 1km distance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# TODO
+* Better configuration of tsconfig
+* Add sorting capabilities for the events
+* Improve file structure organization when the app grows to have more functionality
