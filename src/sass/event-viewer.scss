@@ -1,0 +1,21 @@
+#event_viewer {
+  .event_viewer {
+    &__empty {
+      background-color: var(--color-lighter);
+      padding: 0.5em;
+    }
+
+    &__loading {
+      align-items: center;
+      display: flex;
+      max-height: 0;
+      justify-content: center;
+      overflow: hidden;
+      transition: max-height 0.3s;
+
+      &.is-loading {
+        max-height: 1.5em;
+      }
+    }
+  }
+}

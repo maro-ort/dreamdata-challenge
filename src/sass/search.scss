@@ -1,0 +1,24 @@
+#search {
+  .search {
+    input:invalid {
+      border: 1px solid var(--color-major);
+    }
+
+    &__filter {
+      margin-bottom: 1em;
+    }
+
+    &__loading {
+      align-items: center;
+      display: flex;
+      max-height: 0;
+      justify-content: center;
+      overflow: hidden;
+      transition: max-height 0.3s;
+
+      &.is-loading {
+        max-height: 1.5em;
+      }
+    }
+  }
+}

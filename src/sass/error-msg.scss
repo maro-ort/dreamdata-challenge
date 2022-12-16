@@ -1,0 +1,11 @@
+#error-msg {
+  background-color: var(--color-minor);
+  bottom: 100%;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+
+  &.visible {
+    bottom: 0;
+  }
+}

@@ -1,0 +1,31 @@
+// Palette
+$p-black: rgb(32, 32, 32);
+$p-white: rgb(255, 255, 255);
+$p-dark: rgb(102, 102, 102); //#666;
+$p-darker: rgb(51, 51, 51); //#333;
+$p-light: rgb(170, 170, 170);
+$p-lighter: rgb(238, 238, 238);
+
+// Severity colors
+$s-severe: #e80800;
+$s-major: #e85e00;
+$s-moderate: #e6b736;
+$s-minor: #f3f178;
+$s-unknown: #dbdbda;
+
+$gutter: 1rem;
+
+:root {
+  --color-black: #{$p-black};
+  --color-white: #{$p-white};
+  --color-dark: #{$p-dark};
+  --color-darker: #{$p-darker};
+  --color-light: #{$p-light};
+  --color-lighter: #{$p-lighter};
+
+  --color-severe: #{$s-severe};
+  --color-major: #{$s-major};
+  --color-moderate: #{$s-moderate};
+  --color-minor: #{$s-minor};
+  --color-unknown: #{$s-unknown};
+}

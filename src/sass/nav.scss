@@ -1,0 +1,29 @@
+#nav {
+  background-color: var(--color-lighter);
+  display: flex;
+  flex-direction: column;
+
+  .nav {
+    &__link {
+      border-width: 1px 0;
+      border-style: solid;
+      border-color: transparent;
+      color: var(--color-darker);
+      text-decoration: none;
+      padding: 1em 0.5em;
+      transition: all 0.3s;
+
+      &:hover {
+        border-bottom-color: var(--color-light);
+        border-top-color: var(--color-light);
+        color: var(--color-black);
+      }
+
+      &.active {
+        border-color: var(--color-dark);
+        background-color: var(--color-light);
+        color: var(--color-black);
+      }
+    }
+  }
+}
